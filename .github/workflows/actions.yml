@@ -20,7 +20,8 @@ jobs:
           git log --oneline --decorate --graph
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE      - name: Simple JS Action
+          echo $GITHUB_WORKSPACE
+      - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@ad41a6c27317e688719c813b0d6a25685a9bce54
         with:
