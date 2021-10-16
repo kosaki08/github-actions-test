@@ -29,3 +29,11 @@ jobs:
           who-to-greet: John
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
+      - name: Log node version
+        run: node -v
+      - name: Change Node Version
+        uses: actions/setup-node@v2
+        with: 
+          node-version: 14
+      - name: Log node version
+        run: node -v
