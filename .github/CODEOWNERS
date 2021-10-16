@@ -1,0 +1,5 @@
+* @kosaki08
+*.ts @kosaki08
+*.js @kosaki08
+*.yml @kosaki08
+/public/ @kosaki08
