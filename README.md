@@ -7,5 +7,5 @@
 - Run automated tests
 - Upload code coverage report as an artifact
 - Build project
-- Upload to staging server
+- Upload to Vercel
 - Cache dependencies
