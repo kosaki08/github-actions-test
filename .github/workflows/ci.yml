@@ -69,7 +69,7 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ./
       - name: Open Issue
-        if: failure() && github.event_name == 'push'
+        if: failure() && github.event_name == 'pull_request'
         run: |
           curl --request POST \
           --url https://api.github.com/repos/${{ github.repository }}/issues \
